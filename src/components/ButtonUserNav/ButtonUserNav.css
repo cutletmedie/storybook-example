@@ -1,0 +1,13 @@
+.storybook-button-usernav {
+    display: flex;
+    padding: 8px;
+    align-items: flex-start;
+    border-radius: 4px;
+    background: var(--color-light-gray, #FAFAFA);
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: var(--color-gray, #D6D6D6);
+    }
+}

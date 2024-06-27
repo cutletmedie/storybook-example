@@ -1,0 +1,18 @@
+:root {
+    --background-gray: #FAFAFAFF;
+    --background-white: #FFFFFFFF;
+    --color-black: #000000FF;
+    --color-blue: #406ABFFF;
+    --color-dark-gray: #989898FF;
+    --color-gray: #D6D6D6FF;
+    --color-light-gray: #FAFAFAFF;
+    --color-perple: #FFFFFFFF;
+    --color-red: #D71920FF;
+    --color-white: #FFFFFFFF;
+    --color-yellow-dark: #ffd11a;
+    --color-yellow-light: #FFDB4DFF;
+    --padding-mid: 16px;
+    --padding-normal: 8px;
+    --padding-small: 4px;
+    --font-family: var(--font-family), sans-serif;
+}

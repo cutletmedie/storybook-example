@@ -1,0 +1,76 @@
+:root {
+    --background-gray: #FAFAFAFF;
+    --background-white: #FFFFFFFF;
+    --color-black: #000000FF;
+    --color-blue: #406ABFFF;
+    --color-dark-gray: #989898FF;
+    --color-gray: #D6D6D6FF;
+    --color-light-gray: #FAFAFAFF;
+    --color-perple: #FFFFFFFF;
+    --color-red: #D71920FF;
+    --color-white: #FFFFFFFF;
+    --color-yellow-dark: #ffd11a;
+    --color-yellow-light: #FFDB4DFF;
+    --padding-mid: 16px;
+    --padding-normal: 8px;
+    --padding-small: 4px;
+}
+
+.storybook-button {
+  display: inline-flex;
+  min-width: 128px;
+  padding: 7px 8px 9px 8px;
+  padding: 7px var(--padding-normal, 8px) 9px var(--padding-normal, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  gap: var(--padding-normal, 8px);
+  border-radius: 4px;
+  border-radius: var(--padding-small, 4px);
+  background: #FFF;
+  background: var(--color-white, #FFF);
+  color: #000;
+  color: var(--color-black, #000);
+  text-align: center;
+  font-feature-settings: 'rclt' off;
+
+  font-family: var(--font-family), sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.storybook-button--primary {
+  background: #FFDB4DFF;
+  background: var(--color-yellow-light, #FFDB4DFF);
+  border: none;
+
+  &:hover {
+    /*background: var(--color-yellow-dark, #FFD11AFF);*/
+    background-color: red;
+    color: #61dafb;
+  }
+}
+
+.storybook-button--secondary {
+  border: 1px solid #D6D6D6;
+  border: 1px solid var(--color-gray, #D6D6D6);
+
+  &:hover {
+    border: 1px solid #989898;
+    border: 1px solid var(--color-dark-gray, #989898);
+    color: red;
+  }
+}
+
+.storybook-button--default {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.storybook-button--icon {
+  min-width: 0;
+  min-width: initial;
+}
+

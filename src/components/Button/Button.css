@@ -1,0 +1,54 @@
+@import "../../styles/library.css";
+
+.storybook-button {
+  display: inline-flex;
+  min-width: 128px;
+  padding: 7px var(--padding-normal, 8px) 9px var(--padding-normal, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding-normal, 8px);
+  border-radius: var(--padding-small, 4px);
+  border: 1px solid var(--color-gray, #D6D6D6);
+  background: var(--color-white, #FFF);
+  color: var(--color-black, #000);
+  text-align: center;
+  font-feature-settings: 'rclt' off;
+
+  font-family: var(--font-family), sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.storybook-button-text {
+  min-width: 80px;
+}
+
+.storybook-button--primary {
+  background: var(--color-yellow-light, #FFDB4DFF);
+  border: none;
+
+  &:hover {
+    background: var(--color-yellow-dark, #FFD11AFF);
+  }
+}
+
+.storybook-button--secondary:hover,
+.storybook-button--dropdown:hover,
+.storybook-button--icon:hover {
+    border: 1px solid var(--color-dark-gray, #989898);
+}
+
+.storybook-button--icon {
+  padding: 10px;
+  min-width: unset;
+}
+
+.storybook-button--dropdown {
+  gap: var(--padding-small, 4px);
+  text-align: left;
+  padding: 7px var(--padding-normal, 8px) 9px var(--padding-normal, 8px);
+  justify-content: center;
+}

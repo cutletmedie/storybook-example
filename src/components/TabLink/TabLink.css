@@ -1,0 +1,25 @@
+@import "../../styles/library.css";
+
+.storybook-tablink {
+    display: inline-flex;
+    padding: 7px var(--padding-mid, 16px) 9px var(--padding-mid, 16px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding-normal, 8px);
+    border-radius: var(--padding-small, 4px);
+    color: var(--color-blue, #406ABF);
+    background: var(--color-white, #FFF);
+    text-align: center;
+    font-feature-settings: 'rclt' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.storybook-tablink--active {
+    color: var(--color-black, #000);
+    background: var(--color-gray, #D6D6D6);
+}
