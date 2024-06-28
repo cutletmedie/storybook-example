@@ -1,0 +1,63 @@
+@use "../../styles/library";
+
+.storybook-inline {
+    display: flex;
+    width: 504px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: library.$padding-normal;
+}
+
+.storybook-inline-header {
+    color: library.$color-black;
+    font-feature-settings: 'init' on, 'fina' on;
+
+    /* Body Strong */
+    font-family: library.$font-family;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.storybook-inline-content {
+    display: flex;
+    padding: 7px 12px 9px library.$padding-mid;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: library.$padding-small;
+    border: 1px solid library.$color-gray;
+    background: library.$color-white;
+    cursor: text;
+}
+
+.storybook-inline-content:hover {
+    background: library.$color-light-gray;
+
+    .storybook-inline-input {
+        background: library.$color-light-gray;
+    }
+}
+
+.storybook-inline-input {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    appearance: none;
+    font-feature-settings: 'rclt' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    &:focus-visible {
+        border: none;
+        outline: none;
+    }
+}
+
+.storybook-inline-icon {
+    cursor: pointer;
+}

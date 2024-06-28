@@ -1,13 +1,14 @@
 .storybook-button-pagenav {
-    display: flex;
-    padding: 6px;
-    align-items: flex-start;
-    border-radius: 4px;
-    background: var(--color-white, #FFF);
-    border: none;
-    cursor: pointer;
-
-    &:hover {
-        background: var(--color-gray, #D6D6D6);
-    }
+  display: flex;
+  padding: 6px;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: white;
+  border: none;
+  cursor: pointer;
 }
+.storybook-button-pagenav:hover {
+  background: #d6d6d6;
+}
+
+/*# sourceMappingURL=ButtonPageNav.css.map */

@@ -1,6 +1,6 @@
 import {ButtonHTMLAttributes} from "react";
 
-import './TabLink.css';
+import './TabLink.scss';
 
 interface TabLinkProps {
     active?: boolean;

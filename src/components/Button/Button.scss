@@ -1,0 +1,55 @@
+@use "../../styles/library";
+@use "../../styles/theme";
+
+.storybook-button {
+  display: inline-flex;
+  min-width: 128px;
+  padding: 7px library.$padding-normal 9px library.$padding-normal;
+  justify-content: center;
+  align-items: center;
+  gap: library.$padding-normal;
+  border-radius: library.$padding-small;
+  border: 1px solid library.$color-gray;
+  background: library.$color-white;
+  color: library.$color-black;
+  text-align: center;
+  font-feature-settings: 'rclt' off;
+
+  font-family: theme.$font-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.storybook-button-text {
+  min-width: 80px;
+}
+
+.storybook-button--primary {
+  background: theme.$color-primary;
+  border: none;
+
+  &:hover {
+    background: theme.$color-primary-hover;
+  }
+}
+
+.storybook-button--secondary:hover,
+.storybook-button--dropdown:hover,
+.storybook-button--icon:hover {
+    border: 1px solid library.$color-dark-gray;
+}
+
+.storybook-button--icon {
+  padding: 10px;
+  min-width: unset;
+}
+
+.storybook-button--dropdown {
+  gap: library.$padding-small;
+  text-align: left;
+  padding: 7px library.$padding-normal 9px library.$padding-normal;
+  justify-content: center;
+}

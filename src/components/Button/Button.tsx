@@ -1,5 +1,5 @@
 import React, {ButtonHTMLAttributes} from 'react';
-import './Button.css';
+import './Button.scss';
 import {Icon} from "../Icon/Icon";
 import {IconToken} from "../Icon/Icon.tokens";
 

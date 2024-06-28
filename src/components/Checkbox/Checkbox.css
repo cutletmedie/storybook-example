@@ -1,58 +1,58 @@
 .storybook-checkbox {
-    display: inline-flex;
-    position: relative;
-    padding: 7px 0;
-    align-items: center;
-    gap: var(--padding-normal, 8px);
-
-    color: var(--color-black, #000);
-    font-feature-settings: 'rclt' off;
-
-    /* Body */
-    font-family: var(--font-family), sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 142.857% */
+  display: inline-flex;
+  position: relative;
+  padding: 7px 0;
+  align-items: center;
+  gap: 8px;
+  color: black;
+  font-feature-settings: "rclt" off;
+  /* Body */
+  font-family: "Segoe UI Variable", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
 }
 
 .storybook-checkbox-text {
-    padding-bottom: 2px;
+  padding-bottom: 2px;
 }
 
 .storybook-checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
 .storybook-checkbox .checkmark {
-    border-radius: var(--padding-small, 4px);
-    border: 1px solid var(--color-dark-gray, #989898);
-    background: var(--color-white, #FFF);
-    margin: 0;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #989898;
+  background: white;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
-.storybook-checkbox input:checked  ~ .checkmark {
-    background: var(--color-yellow-dark, #FFD11A);
-    border: 1px solid var(--color-yellow-dark, #FFD11A);
+.storybook-checkbox input:checked ~ .checkmark {
+  background: #ffd11a;
+  border: 1px solid #ffd11a;
 }
 
 .storybook-checkbox .checkmark:after {
-    content: url("../../../public/assets/check.svg");
-    position: absolute;
-    display: none;
+  content: url("../../../public/assets/check.svg");
+  position: absolute;
+  display: none;
 }
 
 .storybook-checkbox input:checked ~ .checkmark:after {
-    display: flex;
-    width: 22px;
-    height: 22px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
 }
+
+/*# sourceMappingURL=Checkbox.css.map */

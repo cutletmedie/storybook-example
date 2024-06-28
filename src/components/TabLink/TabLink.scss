@@ -1,0 +1,25 @@
+@use "../../styles/library";
+
+.storybook-tablink {
+    display: inline-flex;
+    padding: 7px library.$padding-mid 9px library.$padding-mid;
+    justify-content: center;
+    align-items: center;
+    gap: library.$padding-normal;
+    border-radius: library.$padding-small;
+    color: library.$color-blue;
+    background: library.$color-white;
+    text-align: center;
+    font-feature-settings: 'rclt' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.storybook-tablink--active {
+    color: library.$color-black;
+    background: library.$color-gray;
+}

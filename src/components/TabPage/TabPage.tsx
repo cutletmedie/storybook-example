@@ -1,6 +1,6 @@
 import {Icon} from "../Icon/Icon";
 
-import './TabPage.css';
+import './TabPage.scss';
 
 interface TabPageProps {
     active?: boolean;

@@ -1,63 +1,59 @@
-@import "../../styles/library.css";
-
 .storybook-inline {
-    display: flex;
-    width: 504px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--padding-normal, 8px);
+  display: flex;
+  width: 504px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .storybook-inline-header {
-    color: var(--color-black, #000);
-    font-feature-settings: 'init' on, 'fina' on;
-
-    /* Body Strong */
-    font-family: var(--font-family), sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px; /* 142.857% */
+  color: black;
+  font-feature-settings: "init" on, "fina" on;
+  /* Body Strong */
+  font-family: "Segoe UI Variable", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
 }
 
 .storybook-inline-content {
-    display: flex;
-    padding: 7px 12px 9px var(--padding-mid, 16px);
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
-
-    border-radius: var(--padding-small, 4px);
-    border: 1px solid var(--color-gray, #D6D6D6);
-    background: var(--color-white, #FFF);
-    cursor: text;
+  display: flex;
+  padding: 7px 12px 9px 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid #d6d6d6;
+  background: white;
+  cursor: text;
 }
 
 .storybook-inline-content:hover {
-    background: var(--color-light-gray, #FAFAFAFF);
-
-    .storybook-inline-input {
-        background: var(--color-light-gray, #FAFAFAFF);
-    }
+  background: #fafafa;
+}
+.storybook-inline-content:hover .storybook-inline-input {
+  background: #fafafa;
 }
 
 .storybook-inline-input {
-    font-family: inherit;
-    width: 100%;
-    border: none;
-    appearance: none;
-    font-feature-settings: 'rclt' off;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-
-    &:focus-visible {
-        border: none;
-        outline: none;
-    }
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  appearance: none;
+  font-feature-settings: "rclt" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.storybook-inline-input:focus-visible {
+  border: none;
+  outline: none;
 }
 
 .storybook-inline-icon {
-    cursor: pointer;
+  cursor: pointer;
 }
+
+/*# sourceMappingURL=Inline.css.map */

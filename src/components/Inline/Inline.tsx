@@ -1,6 +1,6 @@
 import {Icon} from "../Icon/Icon";
 
-import "./Inline.css";
+import "./Inline.scss";
 import {HTMLAttributes} from "react";
 
 interface InlineProps {

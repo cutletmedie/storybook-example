@@ -1,0 +1,5 @@
+@use "library";
+
+$color-primary: library.$color-yellow-light;
+$color-primary-hover: library.$color-yellow-dark;
+$font-family: library.$font-family;

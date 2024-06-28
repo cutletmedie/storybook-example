@@ -2,7 +2,7 @@ import {Icon} from "../Icon/Icon";
 import {IconToken} from "../Icon/Icon.tokens";
 import {ButtonHTMLAttributes} from "react";
 
-import './MenuItem.css';
+import './MenuItem.scss';
 
 interface MenuItemProps {
     icon?: IconToken;

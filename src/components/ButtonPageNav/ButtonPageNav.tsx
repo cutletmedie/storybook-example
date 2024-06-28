@@ -1,7 +1,7 @@
 import {Icon} from "../Icon/Icon";
 import {ButtonHTMLAttributes} from "react";
 
-import './ButtonPageNav.css'
+import './ButtonPageNav.scss'
 import {IconToken} from "../Icon/Icon.tokens";
 
 interface ButtonPageNavProps {

@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React, {useEffect} from 'react';
+import './App.scss';
 import {Inline} from "./components/Inline/Inline";
 import {TabLink} from "./components/TabLink/TabLink";
 import {MenuItem} from "./components/MenuItem/MenuItem";
@@ -11,7 +11,24 @@ import {ButtonUserNav} from "./components/ButtonUserNav/ButtonUserNav";
 import {TabPage} from "./components/TabPage/TabPage";
 
 function App() {
-  return (
+
+    useEffect(() => {
+        const searchInput = document.getElementById('search-input');
+        const onKeyDown = (event: KeyboardEvent) => {
+            if (event.key.toLowerCase() === 's' && event.shiftKey) {
+                event.preventDefault();
+                searchInput?.focus();
+            }
+        }
+
+        document.addEventListener("keydown", onKeyDown);
+        return () => {
+            document.removeEventListener("keydown", onKeyDown);
+        }
+    }, [])
+
+
+    return (
     <div className="App">
         <aside className={'left-navigation'}>
             <div className={'navigation-header'}>
@@ -28,7 +45,7 @@ function App() {
                 </div>
                 <div className={'search-container'}>
                     <Icon icon={'search'} width={20} height={20}/>
-                    <input className={'search-input'} placeholder={'Search'}/>
+                    <input id={'search-input'} className={'search-input'} placeholder={'Search'}/>
                     <img className={'arrow-block-up'} src={'../../assets/arrow-block-up.svg'} alt={'arrow-block-up'}/>
                 </div>
 

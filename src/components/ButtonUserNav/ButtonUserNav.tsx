@@ -2,7 +2,7 @@ import {Icon} from "../Icon/Icon";
 import {ButtonHTMLAttributes} from "react";
 import {IconToken} from "../Icon/Icon.tokens";
 
-import './ButtonUserNav.css'
+import './ButtonUserNav.scss'
 
 interface ButtonUserNavProps {
     icon: IconToken;

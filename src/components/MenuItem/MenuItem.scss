@@ -1,0 +1,25 @@
+@use "../../styles/library";
+@use "../../styles/theme";
+
+.storybook-menuitem {
+    display: flex;
+    width: 288px;
+    padding: library.$padding-small;
+    align-items: center;
+    gap: library.$padding-small;
+    color: library.$color-black;
+    font-feature-settings: 'rclt' off;
+    border: none;
+
+    font-family: theme.$font-family;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    border-radius: 6px;
+    background: library.$color-light-gray;
+
+    &:hover {
+        background: library.$color-gray;
+    }
+}

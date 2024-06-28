@@ -1,0 +1,15 @@
+@use "../../styles/library";
+
+.storybook-button-usernav {
+    display: flex;
+    padding: 8px;
+    align-items: flex-start;
+    border-radius: 4px;
+    background: library.$color-light-gray;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: library.$color-gray;
+    }
+}

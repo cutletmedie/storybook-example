@@ -1,7 +1,7 @@
 import {IconToken} from "./Icon.tokens";
 import {ImgHTMLAttributes} from "react";
 
-import './Icon.css';
+import './Icon.scss';
 
 interface IconProps {
     icon: IconToken;

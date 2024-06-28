@@ -1,0 +1,70 @@
+@use "../../styles/library";
+@use "../../styles/theme";
+
+.storybook-tabpage {
+    position: relative;
+    top: 1px;
+    display: flex;
+    min-width: 80px;
+    max-height: 36px;
+    padding: 9px 12px 10px 12px;
+    align-items: center;
+    gap: library.$padding-normal;
+    cursor: pointer;
+    border: none;
+    border-right: 1px solid library.$color-dark-gray;
+    border-bottom: 1px solid library.$color-dark-gray;
+    background: library.$color-light-gray;
+    outline: none;
+    color: library.$color-black;
+
+    font-family: theme.$font-family;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+
+    &:hover:not(.storybook-tabpage--active) {
+        background: library.$color-gray;
+    }
+}
+
+.storybook-tabpage--home {
+    display: inline-flex;
+    min-width: unset;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: library.$padding-normal;
+}
+
+.storybook-tabpage--active {
+    border-bottom: 1px solid library.$color-white;
+    background: library.$color-white;
+    z-index: 1;
+}
+
+.storybook-tabpage-close {
+    display: none;
+    padding: 6px library.$padding-normal 6px library.$padding-small;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.storybook-tabpage:hover .storybook-tabpage-close {
+    display: flex;
+}
+
+.storybook-tabpage:hover:not(.storybook-tabpage--active)  .storybook-tabpage-close {
+    background: library.$color-gray;
+    box-shadow: -8px 0 8px 0 #E6E6E6;
+}
+
+.storybook-tabpage--active:hover .storybook-tabpage-close {
+    background: library.$color-white;
+    box-shadow: -8px 0 8px 0 #FFF;
+}

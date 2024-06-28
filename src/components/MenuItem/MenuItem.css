@@ -1,22 +1,22 @@
 .storybook-menuitem {
-    display: flex;
-    width: 288px;
-    padding: var(--padding-small, 4px);
-    align-items: center;
-    gap: var(--padding-small, 4px);
-    color: var(--color-black, #000);
-    font-feature-settings: 'rclt' off;
-    border: none;
-
-    font-family: var(--font-family), sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 142.857% */
-    border-radius: 6px;
-    background: var(--color-light-gray, #FAFAFA);
-
-    &:hover {
-        background: var(--color-gray, #D6D6D6);
-    }
+  display: flex;
+  width: 288px;
+  padding: 4px;
+  align-items: center;
+  gap: 4px;
+  color: black;
+  font-feature-settings: "rclt" off;
+  border: none;
+  font-family: "Segoe UI Variable", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  border-radius: 6px;
+  background: #fafafa;
 }
+.storybook-menuitem:hover {
+  background: #d6d6d6;
+}
+
+/*# sourceMappingURL=MenuItem.css.map */

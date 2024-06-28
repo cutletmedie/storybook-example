@@ -1,0 +1,277 @@
+@use "styles/library";
+@use "styles/theme";
+
+body {
+    display: flex;
+    justify-content: center;
+}
+.App {
+    width: 1440px;
+    height: 1525px;
+    display: flex;
+    column-gap: 32px;
+    justify-content: space-between;
+    padding: 0 library.$padding-mid;
+    background: library.$background-gray;
+}
+
+.left-navigation {
+    position: sticky;
+    top: 0;
+    display: inline-flex;
+    padding: library.$padding-mid 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: library.$padding-mid;
+    height: min-content;
+}
+
+.navigation-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    align-self: stretch;
+}
+
+.profile-container {
+    display: inline-flex;
+    padding-left: 4px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-container .profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+
+    & .profile-picture {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 32px;
+    }
+
+    & .profile-text {
+        display: flex;
+        padding-bottom: 2px;
+        align-items: center;
+        gap: 10px;
+        flex: 1 0 0;
+        color: library.$color-black;
+        font-feature-settings: 'rclt' off;
+
+        font-family: theme.$font-family;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+.profile-buttons-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.search-container {
+    display: flex;
+    width: 288px;
+    padding: library.$padding-normal library.$padding-normal library.$padding-normal 10px;
+    align-items: center;
+    gap: library.$padding-normal;
+
+    border-radius: 6px;
+    border: 1px solid library.$color-dark-gray;
+    background: library.$color-white;
+    cursor: text;
+}
+
+.search-input {
+    color: library.$color-black;
+    font-feature-settings: 'rclt' off;
+
+    font-family: theme.$font-family;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    flex: 1 0 0;
+    outline: none;
+    border: none;
+}
+
+.arrow-block-up {
+    display: flex;
+    padding: library.$padding-small 6px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: library.$padding-small;
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: library.$padding-small;
+}
+
+.section-view {
+    display: flex;
+    width: 1088px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 6px;
+    border: 1px solid library.$color-dark-gray;
+    background: library.$color-white;
+    height: min-content;
+    overflow: hidden;
+}
+
+.section-navigation {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    border-bottom: 1px solid library.$color-dark-gray;
+    background: library.$color-light-gray;
+}
+
+.section-tab-switch {
+    display: flex;
+    padding: 24px 32px;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.pagenav-buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: library.$padding-small;
+}
+
+.tab-switch-header {
+    color: library.$color-black;
+    font-family: theme.$font-family;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    flex: 1 0 0;
+    margin: 0;
+}
+
+.user-config, .user-additional {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user-config-menu, .user-additional-menu {
+    display: flex;
+    padding: 32px;
+    align-items: center;
+    align-self: stretch;
+    border-top: 1px solid library.$color-dark-gray;
+}
+
+.user-config-content, .user-additional-content {
+    display: flex;
+    padding: 0 32px 32px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: flex-start;
+    gap: library.$padding-normal;
+    align-self: stretch;
+}
+
+.buttons-actions {
+    display: flex;
+    align-items: flex-start;
+    gap: library.$padding-normal;
+    flex: 1 0 0;
+}
+
+.buttons-save {
+    display: flex;
+    align-items: flex-start;
+    gap: library.$padding-normal;
+}
+
+.inline-container {
+    display: flex;
+    align-items: flex-end;
+    gap: library.$padding-mid;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-end;
+    gap: library.$padding-normal;
+}
+
+.container-extra {
+    display: flex;
+    align-items: flex-start;
+    gap: library.$padding-mid;
+}
+
+.button-link {
+    display: flex;
+    padding: 7px 0 9px 0;
+    align-items: flex-start;
+    gap: library.$padding-normal;
+
+    color: library.$color-blue;
+    font-feature-settings: 'rclt' off;
+
+    font-family: theme.$font-family;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: library.$padding-small;
+}
+
+.offset-list {
+    display: flex;
+    padding: 0 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: library.$padding-small;
+}
+
+.password-label {
+    display: flex;
+    padding: 7px 0 9px 0;
+    align-items: flex-start;
+    gap: library.$padding-normal;
+    color: library.$color-black;
+    font-feature-settings: 'rclt' off;
+
+    font-family: theme.$font-family;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
