@@ -136,7 +136,7 @@ function App() {
                         <Button localType={'icon'} icon={'copy'}/>
                     </div>
                     <div className={'container-extra'}>
-                        <Checkbox label={'Can log on to Application'} checked/>
+                        <Checkbox label={'Can log on to Application'} defaultChecked/>
                         <span className="button-link">
                             Set authentication restriction
                         </span>
@@ -152,7 +152,7 @@ function App() {
                 <div className={'user-additional-content'}>
                     <Inline label={'Username (used on sign in)'} showIcon defaultValue={'Administrator'}/>
                     <div className={'checkbox-list'}>
-                        <Checkbox label={'1C:Enterprise authentication'} checked />
+                        <Checkbox label={'1C:Enterprise authentication'} defaultChecked />
                         <div className={'offset-list'}>
                             <div className={'container-extra'}>
                                 <div className={'password-label'}>
@@ -173,7 +173,7 @@ function App() {
                                 </svg>
                             </div>
                             <Checkbox label={'User has been prevented from changing password'}/>
-                            <Checkbox label={'Show in the selection list'} checked/>
+                            <Checkbox label={'Show in the selection list'} defaultChecked/>
                         </div>
                         <Checkbox label={'OpenID authentication'}/>
                         <Checkbox label={'OS authentication'}/>
