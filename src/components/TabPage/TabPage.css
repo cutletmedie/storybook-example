@@ -34,9 +34,19 @@
 }
 
 .storybook-tabpage--active {
-  border-bottom: 1px solid white;
   background: white;
   z-index: 1;
+}
+
+.storybook-tabpage--active:after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: "";
+  height: 1px;
+  flex: 1 0 auto;
+  width: 100%;
+  background: white;
 }
 
 .storybook-tabpage-close {
@@ -56,12 +66,12 @@
 
 .storybook-tabpage:hover:not(.storybook-tabpage--active) .storybook-tabpage-close {
   background: #d6d6d6;
-  box-shadow: -8px 0 8px 0 #E6E6E6;
+  box-shadow: -8px -2px 8px -2px #E6E6E6;
 }
 
 .storybook-tabpage--active:hover .storybook-tabpage-close {
   background: white;
-  box-shadow: -8px 0 8px 0 #FFF;
+  box-shadow: -8px -2px 8px -2px #FFF;
 }
 
 /*# sourceMappingURL=TabPage.css.map */
