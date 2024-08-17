@@ -5,6 +5,7 @@
     "node": "^22.3.0",
     "npm": "^10.8.1"
   },
+  "homepage": "https://cutletmedie.github.io/storybook-example",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -26,7 +27,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -60,6 +63,7 @@
     "@storybook/react-webpack5": "^8.1.10",
     "@storybook/test": "^8.1.10",
     "eslint-plugin-storybook": "^0.8.0",
+    "gh-pages": "^6.1.1",
     "prop-types": "^15.8.1",
     "storybook": "^8.1.10",
     "webpack": "^5.92.1"
