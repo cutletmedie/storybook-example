@@ -34,7 +34,7 @@ function App() {
             <div className={'navigation-header'}>
                 <div className={'profile-container'}>
                     <div className={'profile'}>
-                        <img className={'profile-picture'} src={'./profile-img.png'} alt={'profile avatar'}/>
+                        <img className={'profile-picture'} src={process.env.PUBLIC_URL + '/profile-img.png'} alt={'profile avatar'}/>
                         <span className={'profile-text'}>Livia Mango</span>
                     </div>
                     <div className={'profile-buttons-container'}>
@@ -46,7 +46,7 @@ function App() {
                 <div className={'search-container'}>
                     <Icon icon={'search'} width={20} height={20}/>
                     <input id={'search-input'} className={'search-input'} placeholder={'Search'}/>
-                    <img className={'arrow-block-up'} src={'./assets/arrow-block-up.svg'} alt={'arrow-block-up'}/>
+                    <img className={'arrow-block-up'} src={process.env.PUBLIC_URL + '/assets/arrow-block-up.svg'} alt={'arrow-block-up'}/>
                 </div>
 
             </div>

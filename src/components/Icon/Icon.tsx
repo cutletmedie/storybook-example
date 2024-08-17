@@ -10,7 +10,7 @@ interface IconProps {
 export const Icon = ({icon, ...props}: IconProps & ImgHTMLAttributes<HTMLImageElement>) => {
     if (icon)
         return (
-            <img className={'storybook-icon'} src={`./assets/${icon}.svg`} alt={`Icon ${icon}`} {...props} />
+            <img className={'storybook-icon'} src={process.env.PUBLIC_URL + `/assets/${icon}.svg`} alt={`Icon ${icon}`} {...props} />
         );
 
     return null;
