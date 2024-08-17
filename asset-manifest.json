@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/storybook-example/static/css/main.fec83940.css",
+    "main.js": "/storybook-example/static/js/main.cd14fc4d.js",
+    "index.html": "/storybook-example/index.html",
+    "static/media/check.svg": "/storybook-example/static/media/check.f61f7b5259f8c581f815.svg",
+    "main.fec83940.css.map": "/storybook-example/static/css/main.fec83940.css.map",
+    "main.cd14fc4d.js.map": "/storybook-example/static/js/main.cd14fc4d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fec83940.css",
+    "static/js/main.cd14fc4d.js"
+  ]
+}
